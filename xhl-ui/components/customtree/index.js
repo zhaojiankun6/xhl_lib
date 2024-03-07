@@ -1,0 +1,1 @@
+import{s as t}from"../../index-BZ10B04v.js";import"element-plus/es";import"vue";import"../../tools/utils.js";import"../../hooks/configElement.js";import"../../style-inject.es-BnTDb6vU.js";import"element-plus/dist/locale/zh-cn.mjs";t.install=e=>{e.component("customtree",t)};export{t as default};

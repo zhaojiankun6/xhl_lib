@@ -1,0 +1,40 @@
+{
+  "name": "xhl_lib",
+  "version": "1.2.2",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/example-package.git"
+  },
+  "scripts": {
+    "watch": "rollup -wc",
+    "build": "rollup -c"
+  },
+  "main": "xhl-ui/main.js",
+  "module": "xhl-ui/main.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.6.0",
+    "rollup-plugin-clear": "2.0.7",
+    "unplugin-auto-import": "^0.17.2",
+    "vue": "^3.3.9"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@vueuse/core": "^10.9.0",
+    "element-plus": "2.5.6",
+    "loadsh": "^0.0.4",
+    "node-sass": "^9.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.69.5",
+    "unplugin-vue-components": "^0.26.0"
+  }
+}

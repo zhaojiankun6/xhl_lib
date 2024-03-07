@@ -1,0 +1,81 @@
+.custom-tree-node {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin-left: 8px;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    color: #303133;
+    .label-info{
+        display: flex;
+        align-items: center;
+        .custom-shujiegou-wuziji{
+            color: #909399;
+        }
+    }
+    .tree-title {
+        display: inline-block;
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        :deep{
+            .hightName{
+                background: #fff6a0;
+            }
+        }
+       
+    }
+
+    .statusicon{
+        margin-right: 10px;
+    }
+}
+
+
+.custom-tree-node:hover {
+
+    .label-info {
+        color: #3B78DE;
+    }
+}
+
+
+
+.filter_commpoent {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+
+:deep{
+    .#{$elnamespace}-tree-node__content{
+            // background-color: #f5f7fa !important;
+            .#{$elnamespace}-tree-node__expand-icon{
+                padding: 0;
+            }
+            .#{$elnamespace}-checkbox{
+                margin-left: 4px;
+                margin-right: 0;
+            }
+    }
+    .#{$elnamespace}-tree-node__content:hover {
+    background-color: transparent;
+        
+    }
+    .#{$elnamespace}-tree-node:focus > .#{$elnamespace}-tree-node__content {
+        background-color: transparent;
+        }
+    .#{$elnamespace}-tree--highlight-current .#{$elnamespace}-tree-node.is-current > .#{$elnamespace}-tree-node__content{
+        .tree-title {
+            color: #3B78DE;
+        }
+            background-color: #f5f7fa !important;
+    }
+    .#{$elnamespace}-tree-node > .#{$elnamespace}-tree-node__children{
+        overflow: visible;
+    }
+}
